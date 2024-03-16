@@ -4,6 +4,7 @@ import {Movies}  from "./Movies.jsx";
 import {SearchMovies}  from "./SearchMovie.jsx";
 
 const ShowMovies = () => {
+ 
     const[movies, setMovies] = useState([]);
     //in case button click
     const handleSearch = async () => {
@@ -17,7 +18,7 @@ const ShowMovies = () => {
   return(
      <>
       <SearchMovies sendMoviesToParent={setMovies} />
-      <h2>ShowMovies</h2>  
+      <h2>Movies</h2>  
       {/* <button className="btn"  
       onClick={handleSearch}> -Show Filmer - Dog </button>  */}
       <Movies movies={movies} />

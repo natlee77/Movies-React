@@ -15,7 +15,7 @@ const ToAppApi = () => {
            
             
          setMovies(res.data.Search);
-           
+         localStorage.setItem("movies", JSON.stringify(res.data.Search));  
       } 
         getData();
     }, []);//1 gång med start 
